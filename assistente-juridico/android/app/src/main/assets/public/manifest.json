@@ -1,0 +1,63 @@
+{
+  "name": "SK Jurídico — Assistente IA",
+  "short_name": "SK Jurídico",
+  "description": "Assistente jurídico com IA para advogados brasileiros. Gera petições, minutas e documentos com formatação ABNT.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0d1526",
+  "theme_color": "#1e40af",
+  "lang": "pt-BR",
+  "categories": ["productivity", "business", "utilities"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Nova Petição",
+      "short_name": "Petição",
+      "description": "Gerar nova petição com IA",
+      "url": "/",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Jurisprudência",
+      "short_name": "Jurisp.",
+      "description": "Buscar jurisprudência no DataJud",
+      "url": "/jurisprudencia",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Configurações",
+      "short_name": "Config.",
+      "description": "Configurar chaves de API",
+      "url": "/configuracoes",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Tramitação",
+      "short_name": "Tramit.",
+      "description": "Tramitação Inteligente",
+      "url": "/tramitacao",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    }
+  ]
+}
