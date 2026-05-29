@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/sk-editor"
+title = "Maikon Juridico Pro — SK Editor"
+version = "50.0.0"
+id = "artifacts/sk-editor"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = ["/sk-editor"]
+localPort = 22595
+
+[services.development]
+run = "pnpm --filter @workspace/sk-editor run dev"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/sk-editor", "run", "build"]
+publicDir = "artifacts/sk-editor/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22595"
+BASE_PATH = "/sk-editor"
