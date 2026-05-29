@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Assistente Jurídico"
+version = "1.0.0"
+id = "artifacts/juridico"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21726
+
+[services.development]
+run = "pnpm --filter @workspace/juridico run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/juridico", "run", "build" ]
+publicDir = "artifacts/juridico/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21726"
+BASE_PATH = "/"
