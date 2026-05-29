@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+    <rect width="192" height="192" rx="34.56" fill="#111a0e"/>
+    <rect width="192" height="11.52" y="138.24" rx="2" fill="#d4b84a" opacity="0.3"/>
+    <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle" 
+      font-family="serif" font-size="86" font-weight="bold" fill="#d4b84a">⚖</text>
+    <text x="50%" y="78%" text-anchor="middle" dominant-baseline="middle"
+      font-family="sans-serif" font-size="24" font-weight="700" fill="#8a9a72" letter-spacing="1">SK</text>
+  </svg>
