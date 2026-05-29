@@ -1,0 +1,27 @@
+kind = "mobile"
+previewPath = "/sk-mobile/"
+title = "SK Jurídico Mobile"
+version = "1.0.0"
+id = "artifacts/sk-mobile"
+router = "expo-domain"
+
+[[integratedSkills]]
+name = "expo"
+version = "1.0.0"
+
+[[services]]
+ensurePreviewReachable = "/status"
+name = "expo"
+paths = [ "/sk-mobile/" ]
+localPort = 23888
+
+[services.development]
+run = "pnpm --filter @workspace/sk-mobile run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/sk-mobile", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/sk-mobile", "run", "serve" ]
+
+[services.env]
+PORT = "23888"
+BASE_PATH = "/sk-mobile/"
