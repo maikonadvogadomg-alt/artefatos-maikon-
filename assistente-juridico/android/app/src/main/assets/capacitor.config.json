@@ -1,0 +1,19 @@
+{
+	"appId": "br.adv.skjuridico",
+	"appName": "SK Jurídico IA",
+	"webDir": "dist/public",
+	"server": {
+		"androidScheme": "https"
+	},
+	"android": {
+		"allowMixedContent": true
+	},
+	"plugins": {
+		"SplashScreen": {
+			"launchShowDuration": 2000,
+			"backgroundColor": "#0f172a",
+			"showSpinner": true,
+			"spinnerColor": "#3b82f6"
+		}
+	}
+}
